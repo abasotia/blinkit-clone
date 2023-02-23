@@ -4,18 +4,20 @@ class View{
     {
          this.rootDiv = document.getElementById("root");
          this.mainBody = document.createElement('div');
+         this.dummy = document.createElement("div");
          this.content = content
          this.addBtnRemoved = [];
     }  
 
     createMainBody(products,basket,isPresentInCart)
     {
+        this.mainBody.innerHTML = "";
         this.mainBody.className = "main-body";
         let sideMenu = this.createSideBar();
         let parentGrid = this.createProductGrid(products,basket,isPresentInCart);
         this.mainBody.appendChild(sideMenu);
         this.mainBody.appendChild(parentGrid);
-        this.rootDiv.appendChild(this.mainBody)
+        this.dummy.appendChild(this.mainBody)
     }
 
     createNavBar()
@@ -251,6 +253,68 @@ class View{
             check.blinkitPayment(calculations,calculationsMRP);
         }
         
+    }
+
+    clearCart(basket)
+    {
+        let clearCart = document.getElementById("clearCart");
+        clearCart.addEventListener("click", () =>{
+            localStorage.clear();
+            window.location.reload();
+        })
+    }
+
+    searchItem(products,isPresentInCart,addToCart,incItem,decItem,basket,calculations)
+    {
+
+        let searchContainer = new Set(products);
+        this.rootDiv.appendChild(this.dummy);
+        this.createMainBody([...searchContainer]);
+        this.changeAddBtn(addToCart,incItem,decItem,isPresentInCart,basket,calculations);
+        let searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("keyup", () => {
+            console.log("Event Fired");
+            searchContainer.clear();
+            let inputInfo = searchInput.value;
+
+            inputInfo = inputInfo.toUpperCase();
+
+            let n = products.length;
+
+            for(let i=0; i<n ; i++)
+            {
+                if(((products[i].productName).toUpperCase()).includes(inputInfo))
+                {
+                    searchContainer.add(products[i]);
+                    
+                }
+            }
+
+            this.createMainBody([...searchContainer]);
+            this.changeAddBtn(addToCart,incItem,decItem,isPresentInCart,basket,calculations);
+
+            console.log(searchContainer);
+            
+
+        })
+    }
+
+    removeItem(isPresentInCart,removeItemFromBasket)
+    {
+        let removeBtn = document.querySelectorAll(".remove");
+
+        let N = removeBtn.length;
+
+        for(let i=0; i<N; i++)
+        {
+            
+            removeBtn[i].addEventListener("click", (e) =>{
+                let id = parseInt(e.target.id.substr(6));
+                let basketIndex = isPresentInCart(id);
+                removeItemFromBasket(id);
+                window.location.reload();
+            })
+        }
     }
 
 

@@ -83,6 +83,11 @@ class checkout{
             minusCartBtn.innerHTML = "-";
             valCartBtn.innerHTML   = `${basket[i].units}`;
 
+            let remove = document.createElement("div");
+            remove.className = "remove";
+            remove.id = `remove${i}`;
+            remove.innerHTML = "Remove";
+
             quantitySelectorCart.appendChild(minusCartBtn);
             quantitySelectorCart.appendChild(valCartBtn);
             quantitySelectorCart.appendChild(plusCartBtn);
@@ -91,8 +96,16 @@ class checkout{
             itemDetailCart.appendChild(itemPurchaseDetails);
 
             itemAddedToCart.appendChild(itemDetailCart);
-            itemAddedToCart.appendChild(quantitySelectorCart);
+            
+            let wrapper = document.createElement("div");
+            wrapper.className = "wrapper";
+            wrapper.appendChild(quantitySelectorCart);
+            wrapper.appendChild(remove);
 
+
+            
+            itemAddedToCart.appendChild(wrapper);
+            
             this.cartItems.appendChild(itemAddedToCart);
         }
 
@@ -123,10 +136,16 @@ class checkout{
         pNumItems.id = "itemNumberTtl";
         pNumItems.innerHTML = `${data[1]} items`;
 
+        let clearCart = document.createElement("div");
+        clearCart.className = "clearCart";
+        clearCart.id = "clearCart";
+        clearCart.innerHTML = "Clear Cart";
+
         this.placeOrder.appendChild(placeOrderHeader);
         this.placeOrder.appendChild(ttd);
         this.placeOrder.append(pDeliveryTime);
         this.placeOrder.append(pNumItems);
+        this.placeOrder.appendChild(clearCart);
 
 
         

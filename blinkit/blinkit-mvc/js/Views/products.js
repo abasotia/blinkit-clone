@@ -153,8 +153,8 @@ class Products{
 
        
 
-        let basketIndex = isPresentInCart(Id);
-        console.log(basketIndex);
+        // let basketIndex = isPresentInCart(Id);
+        // console.log(basketIndex);
         // if(basketIndex == -1)
         //  {
         //     let addBtn = this.blinkitAddBtn(Id-1);

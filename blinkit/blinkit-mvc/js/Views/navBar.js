@@ -75,6 +75,7 @@ class NavigationBar{
     blinkitSearchInput(){
         let inputSearch = document.createElement("input");
         inputSearch.className = "search-input";
+        inputSearch.id = "searchInput";
         inputSearch.type = "search";
         inputSearch.placeholder="Search...";
         return inputSearch;
@@ -120,12 +121,16 @@ class NavigationBar{
     }
    
     blinkitBtnCart(){
-        let myCart = document.createElement("div");
+        let myCart = document.createElement("a");
+        // let anchor = document.createElement("a");
+        // anchor.href = "index.html";
+        myCart.href = "checkout.html";
         myCart.id = "my-cart";
         if(this.content[1] ===0)
             myCart.innerHTML = "My Cart";
         else
             myCart.innerHTML = `<p>${this.content[1]} items</p> <p>₹ ${this.content[0]}</p>`;
+        // anchor.appendChild(myCart);
         return myCart;
     }
 }
