@@ -1,0 +1,81 @@
+[{
+    "id" : "1",
+    "image": "../../images/17748a.jpg",
+    "productName": "Lemon",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{ 
+    "id": "2",
+    "image": "../../images/23383a.jpg",
+    "productName": "Carrots",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "3",
+    "image": "../../images/355004a.jpg",
+    "productName": "Garlic",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "4",
+    "image": "../../images/391306a.avif", 
+    "productName": "Onion",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "5",
+    "image": "../../images/421703a.jpg",
+    "productName": "Ginger",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "6",
+    "image": "../../images/445675a.jpg",
+    "productName": "Tomato",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "7",
+    "image": "../../images/253317a.jpg",
+    "productName": "Mushrooms",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "8",
+    "image": "../../images/391305a.jpg",
+    "productName": "Potato",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+},
+{
+    "id": "9",
+    "image": "../../images/423735a.jpg",
+    "productName": "Green Chillies",
+    "amountInKg": "1kg",
+    "newPrice": "30",
+    "originalPrice": "38",
+    "units": 0
+}]

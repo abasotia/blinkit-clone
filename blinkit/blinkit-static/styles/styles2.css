@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.place-order{
+    margin: 10px auto;
+    width: 60%;
+}
+.place-order-header > p{
+
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+    flex-direction: column;
+
+}
+
+//check this
+.time-to-deliver :first-child{
+    font-size: 15px;
+    font-weight: 600;
+}
+.time-to-deliver :nth-child(2)
+{
+    color: grey;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.items-added-to-cart{
+    margin-top: 20px;
+}
+.item-added-to-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-detail-cart{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    
+}
+.item-image{
+    background-color: rgb(248,248,248);
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(238,238,238);
+    border-radius: 12px;
+    margin-right: 10px;
+   
+}
+.item-image img{
+    width:75px;
+    height: 75px;
+    border: 1px solid rgb(238,238,238);
+    border-radius: 12px;
+}
+
+.item-purchase-details :nth-child(1){
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.item-purchase-details :nth-child(2){
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 20px;
+    
+}
+
+.item-purchase-details :nth-child(3) 
+.grand-total{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.quantity-selector-cart{
+    display: flex;
+    height: max-content;
+    background-color: green;
+    padding: 8px;
+    border-radius: 8px;;
+}
+
+.quantity-selector-cart div{
+    color: white;
+    font-size: 12px;
+    font-weight: 650;
+    text-align: center;
+    padding: 3px;
+
+}
+
+.payment-section{
+    margin: 50px auto 0px auto;
+    width: 60%;
+}
+.payment-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-details :first-child{
+    color: rgb(122,122,122);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.payment-details .grand-total{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#footer-text-page2{
+    margin: 25px auto;
+}
+
+.total-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    color: white;
+    font-size:15px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+}
