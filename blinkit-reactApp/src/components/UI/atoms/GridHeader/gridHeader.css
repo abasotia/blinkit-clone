@@ -1,0 +1,10 @@
+.gridHeader{
+    
+    border-right: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  .gridHeadingText{
+    font-weight: 500px;
+    font-size: 20px;
+    margin: 15px;
+  }

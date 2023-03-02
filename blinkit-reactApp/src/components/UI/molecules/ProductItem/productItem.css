@@ -1,0 +1,116 @@
+.productDetails{
+    width: 25%;
+    height: 39vh;
+  }
+  .offer{
+    background: #538cee;
+    border-radius: 4px;
+    font-family: 'Okra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    color: #ffffff;
+    top: 6px;
+    left: 6px;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    z-index: 9;
+  }
+  .productDetails{
+   
+    
+    border: 1px solid rgb(238, 238, 238);
+
+  }
+  .product{
+    text-align: center;
+    
+  }
+  .product img{
+    width:150px;
+    height: 150px;
+  }
+  .amountInKg{
+    display: inline-block;
+    color:lightgrey;
+    
+    margin: 6px;
+  }
+  .priceDetailsAdd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .newPrice{
+    margin: 6px;
+    font-size: 14px;
+  }
+  .oldPrice{
+    margin: 6px;
+    color: lightgrey;
+    text-decoration:line-through;
+    font-size: 14px;
+  }
+
+  .addBtn{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 36px;
+    background-color: rgb(247, 255, 249);
+    border: 0.5px solid rgb(12, 131, 31);
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(12, 131, 31);
+  }
+
+  .addBtnCart{
+    background-color: green;
+    padding: 8px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addBtnCart div{
+    color: white;
+    font-size: 15px;
+    font-weight: 650;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+  .productDetails > :nth-child(3){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .productDetails > :nth-child(3) img{
+    width: 12px;
+    height: 12px;
+  }
+
+  .productDetails > :nth-child(3) div {
+    margin: 6px;
+    font-size: 12px;
+    color:rgb(12, 131, 31);
+    background-color: rgb(247, 255, 249);
+  }
+
+  .productDetails > p {
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 100;
+  }
