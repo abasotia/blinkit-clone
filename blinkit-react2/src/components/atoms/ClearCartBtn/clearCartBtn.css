@@ -1,0 +1,11 @@
+.clearCart{
+    background-color: rgb(169, 62, 62);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
