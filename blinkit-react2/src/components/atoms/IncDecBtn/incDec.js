@@ -13,8 +13,10 @@ class IncDecBtn extends Component {
                 onClick={() => this.props.decreaseProductUnit(productName) }>
                     -
                 </div>
+               
                 <div className="value" id={productName}>{cart[productName]}</div>
                 <div className="plus" id={productName}
+                
                 onClick={() => this.props.increaseProductUnit(productName)}
                 >
                 +

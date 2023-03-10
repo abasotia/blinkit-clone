@@ -4,11 +4,11 @@ $color_1: lightgrey;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 75px;
+	margin-top: 4rem;
 }
 .services {
 	border: 1px solid rgb(238, 238, 238);
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,17 +16,17 @@ $color_1: lightgrey;
 	width: 25%;
 	padding: 30px;
 	img {
-		width: 100px;
-		height: 100px;
+		width: 6rem;
+		height: 6rem;
 		border-radius: 50%;
 		float: center;
 		margin: 10px;
 	}
 	.servicesHeader {
-		font-size: 18px;
+		font-size: 1rem;
 		font-weight: 600;
 		text-align: center;
-		margin: 10px;
+		margin: 0.5px;
 	}
 	.servicesText {
 		color: $color_1;

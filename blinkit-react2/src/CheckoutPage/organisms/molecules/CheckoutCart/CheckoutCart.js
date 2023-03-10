@@ -27,7 +27,6 @@ class CheckoutCart extends Component {
         return (
             <div className="itemsAddedToCart" id="iteamsAddedToCart">
                {this.renderCheckoutItems(cartProducts)}
-               {/* <CheckoutItem details={ProductData["Carrots"]} image={ProductImages["Carrots"]} cart={this.props.cart} /> */}
             </div>
         );
     }
