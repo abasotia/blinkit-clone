@@ -1,0 +1,5 @@
+#mainGridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgb(238, 238, 238);
+}/*# sourceMappingURL=mainGrid.css.map */
