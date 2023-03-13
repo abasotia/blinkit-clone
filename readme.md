@@ -1,1 +1,2 @@
-blinkit-clone
+blinkit-react
+
