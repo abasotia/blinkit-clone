@@ -89,6 +89,7 @@ class CheckoutPage extends Component {
 
 const mapStateToProps = (state) => {
     return {
+        productsDisplayed: state.productsDisplayed,
         cart: state.cart
     }
 } 
@@ -98,7 +99,8 @@ const mapDispatchToProps = (dispatch) => {
         clearCartHandler : () => dispatch(clearCart()),
         removeItemFromCart : (productName) => dispatch(removeFromCart(productName)),
         increaseProductUnit : (productName) => dispatch(addToCart(productName)),
-        decreaseProductUnit : (productName) => dispatch(deleteOneFromCart(productName))
+        decreaseProductUnit : (productName) => dispatch(deleteOneFromCart(productName)),
+        
     }
 }
  
