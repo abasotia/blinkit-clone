@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
+import {connect, useDispatch, useSelector} from 'react-redux'
 
 import NavBar from "../components/organisms/NavBar/navBar" 
 import SubHeader from "../components/molecules/SubHeader/subHeader" 
@@ -11,80 +11,24 @@ import { addToCart, deleteOneFromCart, removeFromCart, clearCart } from "../redu
 
 
 
-class CheckoutPage extends Component {
-    constructor(props)
-    {
-        super(props);
-        // this.state={
-        //     cart:{
-        //         "Lemon": 2,
-        //         "Carrots": 2,
-        //         "Garlic": 2,
-        //         "Onion": 2,
-        //         "Ginger": 2,
-        //         "Tomato": 2,
-        //         "Mushrooms": 2,
-        //         "Potato": 2,
-        //         "Green Chillies": 2
-        //     }
-        }
-    
+const CheckoutPage =() => {
 
-    // clearCart()
-    // {
-    //     const temp = {};
-    //     this.setState(this.state.cart = temp);
-    // }
+     const cart = useSelector((state) => state.cart)
+     const dispatch = useDispatch()
 
-    // removeItemFromCart(productName)
-    // {
-    //     const temp = {...this.state.cart};
-    //     delete temp[productName];
-    //     this.setState(this.state.cart = temp);
-    //     //Once the state is set we need to move forward
-    // }
-
-    // handleIncreaseProductUnit(productName)
-    // {
-    //     let tempCart = {...this.state.cart};
-    //     tempCart[productName] += 1;
-    //     this.setState(this.state.cart = tempCart);
-    //     console.log("Cart on inc", this.state.cart);
-    // }
-
-    // handleDecreaseProductUnit(productName)
-    // {
-    //     let tempCart = {...this.state.cart};
-    //     tempCart[productName] -= 1;
-    //     if(tempCart[productName] == 0)
-    //     {
-    //     // let { productName, ...removedProductName} = tempCart;
-    //     // tempCart = removedProductName
-    //     delete tempCart[productName]
-    //     }
-    //     this.setState(this.state.cart = tempCart);
-    //     console.log("cart on decrease", this.state.cart);
-    // }
-
-    
-
-
-
-    render() { 
-        return (<>
-            <NavBar cart={this.props.cart}/>
+    return (<>
+            <NavBar cart={cart}/>
             <SubHeader/>
-            <PlaceOrder cart={this.props.cart} 
-                        clearCartHandler={this.props.clearCartHandler}
-                        removeItemFromCart={this.props.removeItemFromCart}
-                        increaseProductUnit={this.props.increaseProductUnit}       
-                        decreaseProductUnit={this.props.decreaseProductUnit}             
+            <PlaceOrder cart={cart} 
+                        clearCartHandler={() => dispatch(clearCart())}
+                        removeItemFromCart={(productName) => dispatch(removeFromCart(productName))}
+                        increaseProductUnit={(productName) => dispatch(addToCart(productName))}       
+                        decreaseProductUnit={(productName) => dispatch(deleteOneFromCart(productName))}             
             />
-            <PaymentSection cart={this.props.cart} />
+            <PaymentSection cart={cart} />
             <Footer/>  
         </>
         );
-    }
 }
 
 const mapStateToProps = (state) => {
