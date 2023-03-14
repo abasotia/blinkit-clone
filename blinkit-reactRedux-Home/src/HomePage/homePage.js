@@ -19,34 +19,6 @@ constructor(props)
     }
 }
 
-// handleAddToCart(productName)
-// {
-//     let tempCart = {...this.state.cart};
-//     tempCart[productName] = 1;
-//     this.setState(this.state.cart = tempCart);
-// }
-
-// handleIncreaseProductUnit(productName){
-//     let tempCart = {...this.state.cart};
-//     tempCart[productName] += 1;
-//     this.setState(this.state.cart = tempCart);
-//     console.log("Cart on inc", this.state.cart);
-// }
-
-// handleDecreaseProductUnit(productName){
-//     let tempCart = {...this.state.cart};
-//     tempCart[productName] -= 1;
-//     if(tempCart[productName] == 0)
-//     {
-//         // let { productName, ...removedProductName} = tempCart;
-//         // tempCart = removedProductName
-//         delete tempCart[productName]
-//     }
-//     this.setState(this.state.cart = tempCart);
-//     console.log("cart on decrease", this.state.cart);
-
-// }
-
 handleKeyUp(searchValue)
 {
     searchValue = searchValue.toUpperCase();
