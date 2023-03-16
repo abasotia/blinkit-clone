@@ -22,14 +22,6 @@ const sideMenuInfo = {
 
 }
 
-// const sideMenuItem = sideLabel.map((item,index) => {
-//     return (
-//         <div className="sideLabelContainer" id={item} key={item+index}>
-//             <div className="sideImgContainer"><img src={sideImg[index]} ></img></div>
-//             <div className="label">{item}</div>
-//         </div>
-//     )
-// })
 
 
 class SideMenu extends Component {
