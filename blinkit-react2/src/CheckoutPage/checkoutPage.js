@@ -31,21 +31,6 @@ const CheckoutPage =() => {
         );
 }
 
-const mapStateToProps = (state) => {
-    return {
-        productsDisplayed: state.productsDisplayed,
-        cart: state.cart
-    }
-} 
 
-const mapDispatchToProps = (dispatch) => {
-    return{
-        clearCartHandler : () => dispatch(clearCart()),
-        removeItemFromCart : (productName) => dispatch(removeFromCart(productName)),
-        increaseProductUnit : (productName) => dispatch(addToCart(productName)),
-        decreaseProductUnit : (productName) => dispatch(deleteOneFromCart(productName)),
-        
-    }
-}
  
-export default connect(mapStateToProps,mapDispatchToProps)(CheckoutPage);
+export default CheckoutPage;
