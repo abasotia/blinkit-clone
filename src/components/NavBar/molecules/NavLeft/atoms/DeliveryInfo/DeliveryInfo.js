@@ -1,9 +1,8 @@
 import React from "react";
 import { Component } from "react";
-import Dropdown from "../Dropdown/dropdown"
-import cityLocations from "../../../../../../assets/Data/CityLocations";
-
-import "./DeliveryInfo.scss";
+import "./deliveryInfo.css";
+import Dropdown from "../Dropdown/dropdown.js";
+import cityLocations from "../../../assets/Data/CityLocations";
 
 
 
