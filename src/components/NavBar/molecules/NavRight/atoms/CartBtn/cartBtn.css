@@ -1,0 +1,25 @@
+
+.cartBtn{
+    display: flex;
+    background-color: green;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#cartIconContainer img{
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.25rem;
+
+}
+#myCart{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+}

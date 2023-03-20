@@ -1,0 +1,14 @@
+.timeLoc {
+  /* border: 1px solid lightgrey; */
+  height: 4rem;
+}
+
+.delTime {
+  padding: 3vh 5vh 1vh 5vh;
+  font-weight: bold;
+}
+
+.delLocation {
+  padding: 0 5vh;
+  font-size: 1rem;
+}/*# sourceMappingURL=timeLocation.css.map */

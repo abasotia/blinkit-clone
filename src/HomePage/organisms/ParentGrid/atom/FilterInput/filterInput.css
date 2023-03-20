@@ -1,0 +1,11 @@
+.SortByWrapper {
+  display: flex;
+}
+.SortByWrapper .SortByLabel {
+  font-size: 0.75rem;
+  margin: 1rem;
+}
+.SortByWrapper .SortBySelect {
+  font-size: 0.75rem;
+  color: green;
+}/*# sourceMappingURL=filterInput.css.map */
