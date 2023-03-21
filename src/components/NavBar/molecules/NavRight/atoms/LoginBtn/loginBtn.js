@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./loginBtn.scss"
+import "./loginBtn.css"
 class LoginBtn extends Component {
     render() { 
         return (

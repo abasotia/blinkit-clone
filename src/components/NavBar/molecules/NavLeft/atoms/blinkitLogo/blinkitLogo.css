@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .blinkitLogo {
   border: 1px solid lightgray;
 }
@@ -8,3 +9,16 @@
   margin-right: 0.5px;
   margin-top: 1vh;
 }/*# sourceMappingURL=blinkitLogo.css.map */
+=======
+.blinkitLogo{
+    border: 1px solid lightgray;
+}
+
+.blinkitLogo img{
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    margin-right: 0.5px;
+    margin-top: 1vh;
+}
+>>>>>>> 01e787cf (20-March)

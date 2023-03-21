@@ -13,4 +13,3 @@ class FooterText extends Component {
 }
  
 export default FooterText;
-

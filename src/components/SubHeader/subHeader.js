@@ -22,7 +22,7 @@ const menuItemList = menuItems.map((item,i) => {
     )
 })
 
-class NavMenu extends Component {
+class SubHeader extends Component {
   
 
     render() { 
@@ -39,4 +39,4 @@ class NavMenu extends Component {
     }
 }
  
-export default NavMenu;
+export default SubHeader;

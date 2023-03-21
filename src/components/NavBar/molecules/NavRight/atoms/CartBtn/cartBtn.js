@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import cartIcon from "../../../../../../assets/Images/cart.png"
 import "./cartBtn.css"
 import calculateItems from '../../../../../Helper/calculateItems';
 import calculateAmount from '../../../../../Helper/calculateAmount';
+=======
+import cartIcon from "../../../../../../assets/images//cart.png"
+import "./cartBtn.css"
+import calculateItems from '../../../../../../CheckoutPage/Helper/calculateItems';
+import calculateAmount from '../../../../../../CheckoutPage/Helper/calculateAmount';
+>>>>>>> 01e787cf (20-March)
 class MyCart extends Component {
 
     renderCartItemInfo(cart)

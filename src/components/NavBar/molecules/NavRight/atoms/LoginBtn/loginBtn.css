@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Login {
   font-weight: 500;
   font-size: 1.4rem;
@@ -9,3 +10,19 @@
   text-decoration: none;
   color: black;
 }/*# sourceMappingURL=loginBtn.css.map */
+=======
+#Login{
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 5.5rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+#Login a {
+    text-decoration: none;
+    color: black;
+}
+>>>>>>> 01e787cf (20-March)

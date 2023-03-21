@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footerSocial{
     display: flex;
     justify-content: space-around;
@@ -20,3 +21,28 @@
     width: 40px;
     height: 40px;
   }
+=======
+$color_1: lightgrey;
+
+.footerSocial {
+	display: flex;
+	justify-content: space-around;
+	margin: 45px;
+}
+.footerItems {
+	display: flex;
+	font-size: 12px;
+	color: $color_1;
+	justify-content: space-evenly;
+	width: 25%;
+	align-items: center;
+}
+.downloads {
+	width: 100px;
+	height: auto;
+}
+.socials {
+	width: 40px;
+	height: 40px;
+}
+>>>>>>> 01e787cf (20-March)
