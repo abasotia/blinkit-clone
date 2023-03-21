@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import "./footerSection.scss"
-<<<<<<< HEAD
+import "./footerSection.css"
 import I1 from "../../../../assets/Images/10_minute_delivery.png";
 import I2 from "../../../../assets/Images/Best_Prices_Offers.png";
 import I3 from "../../../../assets/Images/Wide_Assortment.png"
-=======
-import I1 from "../../../../assets/images/10_minute_delivery.png";
-import I2 from "../../../../assets/images/Best_Prices_Offers.png";
-import I3 from "../../../../assets/images/Wide_Assortment.png"
->>>>>>> 01e787cf (20-March)
 
 class FooterSection extends Component {
     render() { 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavLeft from "./molecules/NavLeft/navLeft.js"
 import NavRight from "./molecules/NavRight/navRight.js"
 import NavCenter from "./molecules/NavCenter/navCenter.js"
-import "./navBar.scss"
+import "./navBar.css"
 
 class NavBar  extends Component {
     

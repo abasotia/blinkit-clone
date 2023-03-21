@@ -1,12 +1,7 @@
 import React from "react";
 import { Component } from "react";
-<<<<<<< HEAD
-import image from "../../../../../../assets/Images/Screenshot.png";
+import blinkitLogo from "../../../../../../assets/Images/Screenshot.png"
 import "./blinkitLogo.scss";
-=======
-import blinkitLogo from "../../../../../../assets/images/Screenshot.png"
-import "./blinkitLogo.css";
->>>>>>> 01e787cf (20-March)
 
 
 
