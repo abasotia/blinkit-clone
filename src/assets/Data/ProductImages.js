@@ -19,5 +19,3 @@ const productImages = {
                         Potato, 
                         "Green Chillies": GreenChillies
                     }
-
-export default productImages
