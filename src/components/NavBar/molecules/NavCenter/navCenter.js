@@ -6,6 +6,7 @@ import "./navCenter.scss"
 class NavCenter extends Component {
    
     render() { 
+        console.log("nav bar center is re-rendered")
         return (
             <div className="NavCenter">
                 <SeachBar handleKeyUp={this.props.handleKeyUp}/>

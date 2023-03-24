@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import "./PaymentSection.scss"
+
 import calculateAmount from '../../Helper/calculateAmount';
 import calculateItems from '../../Helper/calculateItems';
 import calculateMRP from '../../Helper/calculateMRP';
+
 class PaymentSection extends Component {
     
 

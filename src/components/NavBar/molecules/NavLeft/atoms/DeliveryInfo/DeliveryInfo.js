@@ -9,6 +9,8 @@ import cityLocations from "../../../../../../assets/Data/CityLocations";
 class DeliveryInfo extends Component {
     render()
     {
+
+        console.log("Delivery Info is re-rendered")
         return(
             <div  className="timeLocation">
                 <div className="deliveryTime">

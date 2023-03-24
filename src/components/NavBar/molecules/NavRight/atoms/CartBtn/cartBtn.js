@@ -27,6 +27,7 @@ class MyCart extends Component {
 
 
     render() { 
+        console.log("Cart Btn is rendered");
         return (
             <div className="cartBtn">
                 <div id="cartIconContainer">

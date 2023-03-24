@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import "./sideMenu.css"
+
+import "./sideMenu.scss"
+
 import I1 from  "../../../../../assets/Images/FreshVegetables.jpeg";
 import I2 from "../../../../../assets/Images/FreshFruits.jpeg";
 import I3 from "../../../../../assets/Images/saladBar.jpeg";
@@ -62,6 +64,7 @@ class SideMenu extends Component {
     }
 
     render() { 
+        console.log("THIS IS THE SIDE MENU")
         this.sideMenu = [];
         for(let key in sideMenuInfo)
         {

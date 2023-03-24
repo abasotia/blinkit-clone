@@ -1,36 +1,47 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import "./subHeader.scss"
+import { MENU_ITEMS } from '../../assets/Data/MenuItems';
 
-const menuItems = [
-    "Vegetables and Fruits",
-    "Dairy and Breakfast",
-    "Munchies",
-    "Cold Drinks & Juices",
-    "Tea, Coffee & Health Drinks",
-    "Instant & Frozen Food",
-    "Bakery & Biscuits",
-    "More"
-];
 
-const menuItemList = menuItems.map((item,i) => {
-    return (
-        <div>
-            <li key={item+i}>
-                {item}
-            </li>
-        </div>
-    )
-})
 
-class SubHeader extends Component {
-  
+// const menuItemList = MENU_ITEMS.map((item,i) => {
+//     return (
+//         <div>
+//             <li key={item+i}>
+//                 {item}
+//             </li>
+//         </div>
+//     )
+// })
+
+class SubHeader extends PureComponent {
+
+
+    constructor(props)
+    {
+        super(props)
+         this.menuItemListCaller = this.menuItemList()
+    }
+    menuItemList()
+    {
+        return ( MENU_ITEMS.map((item,i) => {
+            return (
+                <div>
+                    <li key={item+i}>
+                        {item}
+                    </li>
+                </div>
+            )
+        }))
+    }
 
     render() { 
+        console.log("subheader re-rendered");
         return (
             <>
                 <div className="menu1">
                     <ul className="menu1List">
-                        {menuItemList}
+                       {this.menuItemListCaller} 
                     </ul>
                 </div>
             </>

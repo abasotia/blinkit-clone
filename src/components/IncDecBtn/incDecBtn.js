@@ -3,7 +3,9 @@ import "./incDecBtn.scss"
 
 
 class IncDecBtn extends Component {
+
     render() { 
+        console.log("Inc Dec Btn is renedered");
         let {cart,productName,increaseProductUnit,decreaseProductUnit,id} = this.props;
         return (
             <div className="addBtn addBtnCart" id={id}>

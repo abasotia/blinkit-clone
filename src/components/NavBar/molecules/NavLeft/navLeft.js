@@ -8,6 +8,7 @@ import BlinkitLogo from "./atoms/blinkitLogo/blinkitLogo.js"
 class NavLeft extends Component {
     render()
     {
+        console.log("Nav left is re-rendered")
         return(
             <div className="navLeft">
                <BlinkitLogo/>

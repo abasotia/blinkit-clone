@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import "./footerText.scss"
 
 class FooterText extends Component {
-    render() { 
+    render() {
+        console.log("Footer Text Rendered") 
         return (
             <div className="footerText">
                 "Blinkit" is owned &amp; managed by "Blinkit Commerce Private Limited" (formerly known as Grofers India Private Limited) and is not

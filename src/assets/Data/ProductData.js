@@ -1,7 +1,7 @@
 const ProductData = {
   Lemon: {
     id: "1",
-    image: "../assets/Images/17748a.jpg",
+    image: "../assets/Images/17748a.j¯pg",
     productName: "Lemon",
     amountInKg: "1kg",
     newPrice: "30",

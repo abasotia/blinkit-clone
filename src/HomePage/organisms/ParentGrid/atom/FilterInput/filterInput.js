@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "./filterInput.css"
+
+import "./filterInput.scss"
 
 class FilterInput extends Component {
     renderOptions()
@@ -22,7 +23,8 @@ class FilterInput extends Component {
 
 
     }
-    render() { 
+    render() {
+        console.log("THIS IS THE FILTER INPUT FIELD") 
         return (
             <div className="SortByWrapper">
                 <div className="SortByLabel">Sort By:</div>

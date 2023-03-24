@@ -17,7 +17,7 @@ class Dropdown extends Component {
         }));
     }
     render() { 
-        console.log(this.optionData)
+      console.log("Dropdown from the components rendered")
         return(
            <select  id={this.label} className={this.label}>
                 {this.renderOptions()}

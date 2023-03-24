@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./clearCartBtn.css"
+import "./clearCartBtn.scss"
 
 class ClearCartBtn extends Component {
    

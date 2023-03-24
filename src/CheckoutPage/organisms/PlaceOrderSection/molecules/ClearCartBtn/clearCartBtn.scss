@@ -1,0 +1,14 @@
+$color_1: white;
+$background-color_1: rgb(169, 62, 62);
+
+.clearCart {
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 0.5rem;
+	width: fit-content;
+	margin-top: 1rem;
+	cursor: pointer;
+}

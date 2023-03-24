@@ -7,10 +7,11 @@ import "./navBar.css"
 class NavBar  extends Component {
     
     render() { 
+        console.log("Nav Bar is re-rendered");
         return (
             <div className="navBar">
                 <NavLeft/>
-                 <NavCenter />
+                 <NavCenter handleKeyUp={this.props.handleKeyUp}/>
                 <NavRight cart={this.props.cart} />
             </div>
         );

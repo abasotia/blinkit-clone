@@ -9,6 +9,7 @@ import facebook from "../../../../assets/Images/facebook.webp"
 
 class FooterSocial extends Component {
     render() { 
+        console.log("Footer Social Rendered")
         return (
             <div className="footerSocial">
                 <div className="footerItems">

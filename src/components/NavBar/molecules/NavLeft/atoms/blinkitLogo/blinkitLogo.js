@@ -8,6 +8,7 @@ import "./blinkitLogo.scss";
 class BlinkitLogo extends Component {
     render()
     {
+        console.log("Blikit Logo is renedered");
         return(
             <div className="blinkitLogo">
                 <a href="index.html">

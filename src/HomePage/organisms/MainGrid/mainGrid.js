@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import "./mainGrid.scss";
 import ProductData from '../../../assets/Data/ProductData.js';
+
 import ProductImages from '../../../assets/Data/ProductImages.js';
 import ProductItem from '../ParentGrid/molecules/ProductItem/productItem.js'
-import "./mainGrid.scss";
+
 
         
 
@@ -13,7 +15,9 @@ class MainGrid extends Component {
         super(props);
     }
 
-    renderProductDetails(cart,productsDisplayed ,addToCartHandler, increaseProductUnit, decreaseProductUnit)
+    renderProductDetails(cart,
+        //productData,
+        productsDisplayed ,addToCartHandler, increaseProductUnit, decreaseProductUnit)
     {
        
         const grid = productsDisplayed.map((product) =>{
@@ -22,6 +26,7 @@ class MainGrid extends Component {
                     details={product} 
                     productImage={ProductImages[product.productName]} 
                     cart={cart}
+                    //productData={productData}
                     addToCartHandler={addToCartHandler}
                     increaseProductUnit={increaseProductUnit}
                     decreaseProductUnit={decreaseProductUnit}
@@ -32,7 +37,8 @@ class MainGrid extends Component {
     }
 
     render() { 
-            let {cart,productsDisplayed ,addToCartHandler, increaseProductUnit, decreaseProductUnit} = this.props
+            console.log("THIS IS THE MAIN GRID")
+            let {cart,productData,productsDisplayed ,addToCartHandler, increaseProductUnit, decreaseProductUnit} = this.props
         return (
             <div className="mainGridContainer" id="mainGridContainer">
            

@@ -6,7 +6,7 @@ import I3 from "../../../../assets/Images/Wide_Assortment.png"
 
 class FooterSection extends Component {
     render() { 
-        
+        console.log("Foooter Section Rendered");
         return (
             <div className="footerSection">
                 <div className="services">

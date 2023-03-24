@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import "./searchBar.scss"
+import "./searchBar.css"
 
 
 
@@ -8,6 +8,8 @@ class SearchBar extends Component {
 
     render()
     {
+        console.log("nav bar search is re-rendered")
+
         return(
             <div className="searchDiv">
                 <input className="searchInput" 

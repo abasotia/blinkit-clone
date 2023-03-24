@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CheckoutPage from './CheckoutPage/checkoutPage';
 import './styles.scss';
+import HomePage from './HomePage';
+import Checkout from './CheckoutPage';
+import App from './App.js'
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CheckoutPage />
+    < Checkout/>
   </React.StrictMode>
 );
 

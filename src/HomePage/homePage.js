@@ -1,24 +1,42 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom/client";
-import ProductData from "../assets/Data/ProductData.js"
+
+
 import NavBar from  "../components/NavBar/navBar";
 import SubHeader from "../components/SubHeader/subHeader";
 import MainBody from "./organisms/MainBody/mainBody"
 import Footer from "../components/Footer/footer"
+
 import sortByName from "./Helper/sortByName.js"
 import sortByDiscountLowHigh from "./Helper/sortByDiscountLowHigh.js"
 import sortByDiscountHighLow from "./Helper/sortByDiscountHighLow.js"
+
+
+ 
+
 
 class HomePage extends Component {
 constructor(props)
 {
     super(props);
     this.state = {
-        productsDisplayed: Object.values(ProductData).sort((x,y) => x.productName.localeCompare(y.productName)),
+        productData : {},
+        productsDisplayed: [],
         cart: {}
     }
 }
 
+componentDidMount(){
+    console.log("Component state of productData set")
+    fetch('./ProductData.json')
+    .then(response => response.json())
+    .then(data =>
+        {  
+            this.setState(this.state.productData = data)
+            this.setState(this.state.productsDisplayed = Object.values(data).sort((x,y) => x.productName.localeCompare(y.productName)))
+        })
+    
+}
 handleAddToCart(productName)
 {
     let tempCart = {...this.state.cart};
@@ -51,7 +69,8 @@ handleKeyUp(searchValue)
 {
     searchValue = searchValue.toUpperCase();
     let searchContainer = new Set()
-    let productsDisplayed = ProductData;
+    //let productsDisplayed = ProductData;
+    let productsDisplayed = this.state.productData
     for(const key in productsDisplayed)
     {
         if(((productsDisplayed[key].productName).toUpperCase()).includes(searchValue))
@@ -87,12 +106,14 @@ handleSortBy(sortByValue)
 
 
 render() {
+    console.log("HOME PAGE RENDERED");
     return (
       <>
         <NavBar cart={this.state.cart}
                  handleKeyUp={this.handleKeyUp.bind(this)} /> 
         <SubHeader />
         <MainBody cart={this.state.cart} 
+                 productData={this.state.productData}
                   productsDisplayed={this.state.productsDisplayed}
                   addToCartHandler={this.handleAddToCart.bind(this)} 
                   increaseProductUnit={this.handleIncreaseProductUnit.bind(this)}

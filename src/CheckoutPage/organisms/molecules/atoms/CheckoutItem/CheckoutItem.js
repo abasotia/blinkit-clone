@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+
+import "./CheckoutItem.scss"
+
 import IncDecBtn from "../../../../../components/IncDecBtn/incDec.js";
 import RemoveBtn from "../RemoveBtn/removeBtn"
-import "./CheckoutItem.scss"
+
 class CheckoutItem extends Component {
  
     render() { 

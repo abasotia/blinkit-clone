@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+
 import "./incDec.css"
 
 
 class IncDecBtn extends Component {
     render() { 
+        console.log("Inc Dec rendered");
         let {cart,productName} =this.props;
             // ,increaseProductUnit,decreaseProductUnit,id} = this.props;
         return (
