@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import NavBar from "../components/NavBar/navBar" 
 import SubHeader from "../components/SubHeader/subHeader" 
 import PlaceOrder from "./organisms/PlaceOrderSection/PlaceOrder.js" 
@@ -50,7 +51,7 @@ class CheckoutPage extends Component {
     {
         let tempCart = {...this.state.cart};
         tempCart[productName] -= 1;
-        
+
         if(tempCart[productName] == 0)
             delete tempCart[productName]
         

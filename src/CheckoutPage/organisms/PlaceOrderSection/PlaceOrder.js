@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./PlaceOrder.scss"
-import ClearCartBtn from "./molecules/ClearCartBtn";
+import ClearCartBtn from "./atoms/ClearCartBtn";
 import CheckoutCart from "../molecules/CheckoutCart";
 import calculateItems from '../../Helper/calculateItems';
 
