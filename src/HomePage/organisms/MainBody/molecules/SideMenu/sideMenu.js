@@ -1,40 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import "./sideMenu.scss"
 
-import I1 from  "../../../../../assets/Images/FreshVegetables.jpeg";
-import I2 from "../../../../../assets/Images/FreshFruits.jpeg";
-import I3 from "../../../../../assets/Images/saladBar.jpeg";
-import I4 from "../../../../../assets/Images/exotics.jpeg";
-import I5 from "../../../../../assets/Images/Flowers&leaves.jpeg";
-import I6 from "../../../../../assets/Images/FreshlyCutFruits&Sprouts.jpeg";
-import I7 from "../../../../../assets/Images/Leafies&Herbs.png";
+import { SIDE_MENU_INFO } from '../../../../../assets/Data/SideMenuData';
 
-
-
-const sideMenuInfo = {
-
-    "Fresh Vegetables": I1,
-    "Fresh Fruits": I2,
-    "Salad Bar": I3,
-    "Exotics": I4,
-    "Flowers & Leaves": I5,
-    "Freshly Cut & Sprouts" : I6,
-    "Leafies & Herbs": I7
-
-}
-
-// const sideMenuItem = sideLabel.map((item,index) => {
-//     return (
-//         <div className="sideLabelContainer" id={item} key={item+index}>
-//             <div className="sideImgContainer"><img src={sideImg[index]} ></img></div>
-//             <div className="label">{item}</div>
-//         </div>
-//     )
-// })
-
-
-class SideMenu extends Component {
+class SideMenu extends PureComponent {
   
     constructor(props)
     {
@@ -55,7 +25,7 @@ class SideMenu extends Component {
         return(
             <div onClick={()=> this.handleClick(item)} className={className} >
                 <div className="sideImgContainer">
-                    <img src={sideMenuInfo[item]}></img>
+                    <img src={SIDE_MENU_INFO[item]}></img>
                 </div>
                 <div className="label">{item}</div>
 
@@ -66,7 +36,7 @@ class SideMenu extends Component {
     render() { 
         console.log("THIS IS THE SIDE MENU")
         this.sideMenu = [];
-        for(let key in sideMenuInfo)
+        for(let key in SIDE_MENU_INFO)
         {
             if(this.state.selected == key)
                this.sideMenu.push(this.returnSideMenuItem(key,"selectedSideMenuItem "+"sideMenuItemContainer"));
