@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import cartIcon from "../../../../../../assets/Images/cart.png"
 import "./cartBtn.css"
-import calculateItems from '../../../../../Helper/calculateItems';
-import calculateAmount from '../../../../../Helper/calculateAmount';
+import calculateItems from '../../../../../../Helper/calculateItems';
+import calculateAmount from '../../../../../../Helper/calculateAmount';
 class MyCart extends Component {
 
-    renderCartItemInfo(cart)
+    renderCartItemInfo(cart,productData)
     {
         
         
-        if(Object.keys(cart).length == 0)
+        if(!cart || Object.keys(cart).length == 0)
             return "My Cart"
         else{
            let totalProducts = calculateItems(cart);
-           let totalAmount = calculateAmount(cart);
+           let totalAmount = calculateAmount(cart,productData);
             return (
                 <>
                     <p>{totalProducts} items</p>
@@ -27,15 +28,15 @@ class MyCart extends Component {
 
 
     render() { 
-        console.log("Cart Btn is rendered");
+        
         return (
             <div className="cartBtn">
                 <div id="cartIconContainer">
                     <img src={cartIcon}></img>
                 </div>
-                <a href="checkout.html" id="myCart">
-                   {this.renderCartItemInfo(this.props.cart)}
-                </a>
+                <Link  to="/checkout" id="myCart">
+                   {this.renderCartItemInfo(this.props?.cart, this.props?.productData)}
+                </Link>
             </div>
         );
     }

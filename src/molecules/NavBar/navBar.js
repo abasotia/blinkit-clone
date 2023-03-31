@@ -11,8 +11,8 @@ class NavBar  extends Component {
         return (
             <div className="navBar">
                 <NavLeft/>
-                 <NavCenter handleKeyUp={this.props.handleKeyUp}/>
-                <NavRight cart={this.props.cart} />
+                <NavCenter handleKeyUp={this.props?.handleKeyUp}/>
+                <NavRight cart={this.props?.cart} productData={this.props?.productData} />
             </div>
         );
     }

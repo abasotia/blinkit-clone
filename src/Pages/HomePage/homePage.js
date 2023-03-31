@@ -20,9 +20,8 @@ constructor(props)
 {
     super(props);
     this.state = {
-        productData : {},
+       // cart:{},
         productsDisplayed: [],
-        cart: {}
     }
 }
 
@@ -32,38 +31,37 @@ componentDidMount(){
     .then(response => response.json())
     .then(data =>
         {  
-            this.setState(this.state.productData = data)
-            this.setState(this.state.productsDisplayed = Object.values(data).sort((x,y) => x.productName.localeCompare(y.productName)))
+            this.setState({productsDisplayed :Object.values(data).sort((x,y) => x.productName.localeCompare(y.productName))})
         })
     
 }
-handleAddToCart(productName)
-{
-    let tempCart = {...this.state.cart};
-    tempCart[productName] = 1;
-    this.setState(this.state.cart = tempCart);
-}
+// handleAddToCart(productName)
+// {
+//     let tempCart = {...this.props.cart};
+//     tempCart[productName] = 1;
+//     this.setState(this.props.cart = tempCart);
+// }
 
-handleIncreaseProductUnit(productName){
-    let tempCart = {...this.state.cart};
-    tempCart[productName] += 1;
-    this.setState(this.state.cart = tempCart);
-    console.log("Cart on inc", this.state.cart);
-}
+// handleIncreaseProductUnit(productName){
+//     let tempCart = {...this.props.cart};
+//     tempCart[productName] += 1;
+//     this.setState(this.state.cart = tempCart);
+//     console.log("Cart on inc", this.props.cart);
+// }
 
-handleDecreaseProductUnit(productName){
-    let tempCart = {...this.state.cart};
-    tempCart[productName] -= 1;
-    if(tempCart[productName] == 0)
-    {
-        // let { productName, ...removedProductName} = tempCart;
-        // tempCart = removedProductName
-        delete tempCart[productName]
-    }
-    this.setState(this.state.cart = tempCart);
-    console.log("cart on decrease", this.state.cart);
+// handleDecreaseProductUnit(productName){
+//     let tempCart = {...this.props.cart};
+//     tempCart[productName] -= 1;
+//     if(tempCart[productName] == 0)
+//     {
+//         // let { productName, ...removedProductName} = tempCart;
+//         // tempCart = removedProductName
+//         delete tempCart[productName]
+//     }
+//     this.setState(this.state.cart = tempCart);
+//     console.log("cart on decrease", this.state.cart);
 
-}
+// }
 
 handleKeyUp(searchValue)
 {
@@ -109,15 +107,16 @@ render() {
     console.log("HOME PAGE RENDERED");
     return (
       <>
-        <NavBar cart={this.state.cart}
+        <NavBar cart={this.props.cart}
+                productData={this.props.productData}
                  handleKeyUp={this.handleKeyUp.bind(this)} /> 
         <SubHeader />
-        <MainBody cart={this.state.cart} 
-                 productData={this.state.productData}
+        <MainBody cart={this.props.cart} 
+                 productData={this.props.productData}
                   productsDisplayed={this.state.productsDisplayed}
-                  addToCartHandler={this.handleAddToCart.bind(this)} 
-                  increaseProductUnit={this.handleIncreaseProductUnit.bind(this)}
-                  decreaseProductUnit={this.handleDecreaseProductUnit.bind(this)}
+                  addToCartHandler={this.props.handleAddToCart} 
+                  increaseProductUnit={this.props.handleIncreaseProductUnit}
+                  decreaseProductUnit={this.props.handleDecreaseProductUnit}
                   sortBy={this.handleSortBy.bind(this)}         
         />
         <Footer />  

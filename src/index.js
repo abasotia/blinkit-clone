@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles.scss';
 import HomePage from './Pages/HomePage';
 import Checkout from './Pages/CheckoutPage';
+import Thankyou from './Pages/ThankyouPage';
 import App from './App.js'
 
 
@@ -10,7 +11,9 @@ import App from './App.js'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Checkout/>
+    {/* <Checkout/> */}
+    <App/>
+    {/* <Thankyou/> */}
   </React.StrictMode>
 );
 

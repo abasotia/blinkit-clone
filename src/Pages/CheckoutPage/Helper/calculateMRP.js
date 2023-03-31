@@ -1,11 +1,11 @@
-import ProductData from "../../../assets/Data/ProductData";
+// import ProductData from "../../../assets/Data/ProductData";
 
-function calculateMRP(cart)
+function calculateMRP(cart,productData)
 {
    let amount = 0;
    for(const key in cart)
     {
-        let price = parseInt(ProductData[key].originalPrice);
+        let price = parseInt(productData[key].originalPrice);
         let items = parseInt(cart[key]);
         amount += price*items;
     }

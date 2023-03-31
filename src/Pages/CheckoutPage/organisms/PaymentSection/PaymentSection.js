@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import "./PaymentSection.scss"
-
+import { Link } from 'react-router-dom';
 import calculateAmount from '../../../../Helper/calculateAmount';
 import calculateItems from '../../../../Helper/calculateItems';
 import calculateMRP from '../../Helper/calculateMRP';
 
 class PaymentSection extends Component {
     
-
+     
     render() { 
-        let MRP = calculateMRP(this.props.cart);
-        let amount = calculateAmount(this.props.cart);
-        let items = calculateItems(this.props.cart);
+        let {cart, productData} = this.props;
+        let MRP = calculateMRP(cart, productData);
+        let amount = calculateAmount(cart,productData);
+        let items = calculateItems(cart);
         return (
             <div className="paymentSection">
                 <div className="paymentDetails">
@@ -41,7 +42,7 @@ class PaymentSection extends Component {
                        {items+" items. ₹ "+amount}
                         <span className="spanAmt slash" id="spanAmt">₹ 304</span>
                     </div>
-                    <div>{"Proceed >"}</div>
+                    <Link to="/thankyou" className="proceedBar" ><div>{"Proceed >"}</div></Link>
                 </div>
             </div>
         );

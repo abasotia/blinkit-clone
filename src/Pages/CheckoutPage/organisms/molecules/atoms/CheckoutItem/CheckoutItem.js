@@ -8,8 +8,10 @@ import RemoveBtn from "../RemoveBtn/removeBtn"
 class CheckoutItem extends Component {
  
     render() { 
+        
 
-        let {id, productName, amountInKg, newPrice, originalPrice} = this.props.details
+        console.log("PRODUCT ITEM COMPONENT", this.props.details )
+        let {amountInKg, id, newPrice, originalPrice, productName} = this.props.details
        
 
         return (

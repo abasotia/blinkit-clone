@@ -7,7 +7,7 @@ class NavRight extends Component {
         return (
            <div className="NavRight">
             <LoginBtn/>
-            <CartBtn cart={this.props.cart}/>
+            <CartBtn cart={this.props?.cart} productData={this.props?.productData}/>
            </div>
         );
     }

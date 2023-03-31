@@ -7,6 +7,10 @@
     margin: 1rem;
     justify-content: center;
     align-items: center;
+    
+}
+.cartBtn a{
+    text-decoration: none;
 }
 #cartIconContainer img{
     color: white;
@@ -19,6 +23,4 @@
     color: white;
     font-size: 15px;
     font-weight: 500;
-    text-decoration: none;
-
 }

@@ -1,0 +1,18 @@
+.thankyouContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .thankYouImg{
+        width: 15rem;
+        height: 20rem;
+    }
+    .thankyouText{
+        color: green;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+

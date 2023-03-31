@@ -6,7 +6,10 @@ import calculateItems from '../../../../Helper/calculateItems';
 
 
 class PlaceOrder extends Component {
+    
     render() { 
+        console.log("PLACEORDER", this.props.cart)
+        console.log("PLACEORDER", this.props.productData)
         return (
             <div className="placeOrderSection">
                 <div className="placeOrderHeader">
@@ -17,7 +20,7 @@ class PlaceOrder extends Component {
                     <p id="totalItems">{calculateItems(this.props.cart)} items</p>
                 </div>
                 <ClearCartBtn clearCartHandler={this.props.clearCartHandler}/>
-                {Object.keys(this.props.cart).length == 0? <p className="EmptyCartMsg">No items to show</p> : <CheckoutCart cart={this.props.cart} removeItemFromCart={this.props.removeItemFromCart} increaseProductUnit={this.props.increaseProductUnit} decreaseProductUnit={this.props.decreaseProductUnit}/>}
+                {Object.keys(this.props.cart).length == 0? <p className="EmptyCartMsg">No items to show</p> : <CheckoutCart cart={this.props.cart} productData={this.props.productData} removeItemFromCart={this.props.removeItemFromCart} increaseProductUnit={this.props.increaseProductUnit} decreaseProductUnit={this.props.decreaseProductUnit}/>}
             </div>
 
         );

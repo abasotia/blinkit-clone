@@ -23,6 +23,7 @@ $background-color_2: rgb(169, 62, 62);
 		font-size: 15px;
 		font-weight: 700;
 	}
+	
 }
 .footerText {
 	font-size: 12px;
@@ -60,4 +61,8 @@ $background-color_2: rgb(169, 62, 62);
 	height: fit-content;
 	cursor: pointer;
 	margin-top: 0.3rem;
+}
+.proceedBar{
+	text-decoration: none;
+	color: white
 }

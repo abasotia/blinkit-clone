@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProductData from "../../../../../assets/Data/ProductData";
+// import ProductData from "../../../../../assets/Data/ProductData";
 import ProductImages from "../../../../../assets/Data/ProductImages.js";
 import CheckoutItem from "../atoms/CheckoutItem/CheckoutItem";
 import "./CheckoutCart.scss";
@@ -9,8 +9,9 @@ class CheckoutCart extends Component {
     renderCheckoutItems(cartProducts)
     {
         return (cartProducts.map((product,index)=>{
+            console.log("for each product----->", this.props.productData[product])
             return (
-                <CheckoutItem details={ProductData[product]} 
+                <CheckoutItem details={this.props.productData[product]} 
                                 image={ProductImages[product]} 
                                 cart={this.props.cart} 
                                 removeItemFromCart={this.props.removeItemFromCart}
