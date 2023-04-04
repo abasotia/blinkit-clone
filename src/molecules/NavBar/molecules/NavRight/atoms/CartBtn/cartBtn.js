@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import cartIcon from "../../../../../../assets/Images/cart.png"
-import "./cartBtn.css"
+import "./cartBtn.scss"
 import calculateItems from '../../../../../Helper/calculateItems';
 import calculateAmount from '../../../../../Helper/calculateAmount';
 class MyCart extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./footerSection.css"
+import "./footerSection.scss"
 import I1 from "../../../../assets/Images/10_minute_delivery.png";
 import I2 from "../../../../assets/Images/Best_Prices_Offers.png";
 import I3 from "../../../../assets/Images/Wide_Assortment.png"
