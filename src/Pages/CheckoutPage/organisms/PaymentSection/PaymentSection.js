@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./PaymentSection.scss"
 import { Link } from 'react-router-dom';
-import calculateAmount from '../../../../Helper/calculateAmount';
-import calculateItems from '../../../../Helper/calculateItems';
-import calculateMRP from '../../Helper/calculateMRP';
+import calculateAmount from '../../../../helper/calculateAmount';
+import calculateItems from '../../../../helper/calculateItems';
+import calculateMRP from '../../helper/calculateMRP';
 
 class PaymentSection extends Component {
     

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./PlaceOrder.scss"
 import ClearCartBtn from "./atoms/ClearCartBtn";
 import CheckoutCart from "../molecules/CheckoutCart";
-import calculateItems from '../../../../Helper/calculateItems';
+import calculateItems from '../../../../helper/calculateItems';
 
 
 class PlaceOrder extends Component {

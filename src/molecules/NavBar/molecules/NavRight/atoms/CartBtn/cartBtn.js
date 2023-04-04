@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import cartIcon from "../../../../../../assets/Images/cart.png"
-import "./cartBtn.css"
-import calculateItems from '../../../../../../Helper/calculateItems';
-import calculateAmount from '../../../../../../Helper/calculateAmount';
+import {cartIcon} from "./constants/cartIcon"
+import "./cartBtn.scss"
+import calculateItems from '../../../../../../helper/calculateItems';
+import calculateAmount from '../../../../../../helper/calculateAmount';
 class MyCart extends Component {
 
     renderCartItemInfo(cart,productData)

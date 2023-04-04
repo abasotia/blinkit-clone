@@ -1,7 +1,7 @@
 const ProductData = {
   Lemon: {
     id: "1",
-    image: "../assets/Images/17748a.j¯pg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/17748a.jpg?ts=1650869772",
     productName: "Lemon",
     amountInKg: "1kg",
     newPrice: "30",
@@ -10,7 +10,7 @@ const ProductData = {
   },
   Carrots: {
     id: "2",
-    image: "../assets/Images/23383a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/23383a.jpg?ts=1636540615",
     productName: "Carrots",
     amountInKg: "1kg",
     newPrice: "35",
@@ -19,7 +19,7 @@ const ProductData = {
   },
   Garlic: {
     id: "3",
-    image: "../assets/Images/355004a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/355004a.jpg?ts=1671100122",
     productName: "Garlic",
     amountInKg: "1kg",
     newPrice: "25",
@@ -28,7 +28,7 @@ const ProductData = {
   },
   Onion: {
     id: "4",
-    image: "../assets/Images/391306a.avif",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/391306a.jpg?ts=1652789363",
     productName: "Onion",
     amountInKg: "1kg",
     newPrice: "54",
@@ -37,7 +37,7 @@ const ProductData = {
   },
   Ginger: {
     id: "5",
-    image: "../assets/Images/421703a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/421703a.jpg?ts=1639905261",
     productName: "Ginger",
     amountInKg: "1kg",
     newPrice: "17",
@@ -46,7 +46,7 @@ const ProductData = {
   },
   Tomato: {
     id: "6",
-    image: "../assets/Images/445675a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/3881a.jpg?ts=1671620195",
     productName: "Tomato",
     amountInKg: "1kg",
     newPrice: "30",
@@ -55,7 +55,7 @@ const ProductData = {
   },
   Mushrooms: {
     id: "7",
-    image: "../assets/Images/253317a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/253317a.jpg?ts=1679464054",
     productName: "Mushrooms",
     amountInKg: "1kg",
     newPrice: "53",
@@ -64,7 +64,7 @@ const ProductData = {
   },
   Potato: {
     id: "8",
-    image: "../assets/Images/391305a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/391305a.jpg",
     productName: "Potato",
     amountInKg: "1kg",
     newPrice: "58",
@@ -73,7 +73,7 @@ const ProductData = {
   },
   "Green Chillies": {
     id: "9",
-    image: "../assets/Images/423735a.jpg",
+    image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/app/images/products/sliding_image/423735a.jpg?ts=1639905261",
     productName: "Green Chillies",
     amountInKg: "1kg",
     newPrice: "13",

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import "./footerSocial.scss"
-import appStore from "../../../../assets/Images/appStore.webp";
-import googlePlay from "../../../../assets/Images/googlePlay.webp"
-import twitter from "../../../../assets/Images/twitter.webp"
-import instagram from "../../../../assets/Images/instagram.webp"
-import linkedin from "../../../../assets/Images/linkedin.webp"
-import facebook from "../../../../assets/Images/facebook.webp"
+import {appStore, googlePlay, twitter, instagram, linkedin, facebook} from "./constants/footerSocialData";
+
 
 class FooterSocial extends Component {
     render() { 

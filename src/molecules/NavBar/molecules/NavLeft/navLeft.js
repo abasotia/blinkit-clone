@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import "./navLeft.css"
+import "./navLeft.scss"
 import DeliveryInfo from "./atoms/DeliveryInfo/DeliveryInfo.js";
 import BlinkitLogo from "./atoms/blinkitLogo/blinkitLogo.js"
 

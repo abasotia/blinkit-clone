@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import "./incDec.css"
+import "./incDec.scss"
 
 
 class IncDecBtn extends Component {

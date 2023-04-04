@@ -7,9 +7,9 @@ import SubHeader from "../../molecules/SubHeader/subHeader";
 import MainBody from "./organisms/MainBody/mainBody"
 import Footer from "../../molecules/Footer/footer"
 
-import sortByName from "./Helper/sortByName.js"
-import sortByDiscountLowHigh from "./Helper/sortByDiscountLowHigh.js"
-import sortByDiscountHighLow from "./Helper/sortByDiscountHighLow.js"
+import sortByName from "./helper/sortByName.js"
+import sortByDiscountLowHigh from "./helper/sortByDiscountLowHigh.js"
+import sortByDiscountHighLow from "./helper/sortByDiscountHighLow.js"
 
 
  

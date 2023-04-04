@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./loginBtn.css"
+import "./loginBtn.scss"
 class LoginBtn extends Component {
     render() { 
         console.log("Login Btn is renedered");

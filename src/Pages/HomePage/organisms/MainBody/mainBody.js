@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import "./mainBody.scss"
 import SideMenu from "./molecules/SideMenu/sideMenu.js"
 import ParentGrid from '../ParentGrid/parentGrid';
-import { defaultFunction } from '../../../../Helper/defaultFunction';
+import { defaultFunction } from '../../../../helper/defaultFunction';
 
 
 

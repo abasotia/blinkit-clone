@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import "./footerSection.css"
-import I1 from "../../../../assets/Images/10_minute_delivery.png";
-import I2 from "../../../../assets/Images/Best_Prices_Offers.png";
-import I3 from "../../../../assets/Images/Wide_Assortment.png"
+import "./footerSection.scss"
+import {I1,I2,I3} from "./constants/footerImageData"
 
 class FooterSection extends Component {
     render() { 

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import "./productItem.scss"
 
-import freshIcon from "../../../../../../assets/Images/fresh_icon.png";
+import {freshIcon} from "./constants/freshIconImage.js";
 import IncDecBtn from '../../../../../../molecules/IncDecBtn'
 import AddBtn from '../../../../../../molecules/AddBtn/addBtn';
-import calculateDiscountPercentage from '../../../../../../molecules/Helper/calculateDiscountPercent';
+import calculateDiscountPercentage from '../../../../../../molecules/helper/calculateDiscountPercent';
 
 
 

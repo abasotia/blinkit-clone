@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import HomePage from "./Pages/HomePage";
-import Checkout from "./Pages/CheckoutPage"
-import Thankyou from "./Pages/ThankyouPage"
+import HomePage from "./pages/HomePage";
+import Checkout from "./pages/CheckoutPage"
+import Thankyou from "./pages/ThankyouPage"
 
 class App extends Component {
     constructor(props)

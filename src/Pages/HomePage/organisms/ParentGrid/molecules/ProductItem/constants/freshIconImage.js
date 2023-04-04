@@ -1,0 +1,1 @@
+export const freshIcon = "https://cdn.grofers.com/assets/ui/fresh_icon.png"

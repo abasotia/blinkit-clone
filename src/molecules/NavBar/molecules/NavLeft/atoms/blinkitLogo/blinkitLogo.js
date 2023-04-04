@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import blinkitLogo from "../../../../../../assets/Images/Screenshot.png"
+import blinkitLogo from "./image/Screenshot.png"
 import "./blinkitLogo.scss";
 
 

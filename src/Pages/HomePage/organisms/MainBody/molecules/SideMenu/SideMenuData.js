@@ -1,10 +1,10 @@
-import I1 from  "./Images/FreshVegetables.jpeg";
-import I2 from "./Images/FreshFruits.jpeg";
-import I3 from "./Images/saladBar.jpeg";
-import I4 from "./Images/exotics.jpeg";
-import I5 from "./Images/Flowers&leaves.jpeg";
-import I6 from "./Images/FreshlyCutFruits&Sprouts.jpeg";
-import I7 from "./Images/Leafies&Herbs.png";
+let I1 = "https://cdn.grofers.com/app/images/category/cms_images/icon/1489_1643613620694.png" 
+let I2 = "https://cdn.grofers.com/app/images/category/cms_images/icon/1503_1678341703635.png"
+let I3 = "https://cdn.grofers.com/app/images/category/cms_images/icon/928_1658840270707.png"
+let I4 = "https://cdn.grofers.com/app/images/category/cms_images/icon/278_1678705041060.png"
+let I5 = "https://cdn.grofers.com/app/images/category/cms_images/icon/1452_1617891490134.png"
+let I6 = "https://cdn.grofers.com/app/images/category/cms_images/icon/395_1668582176947.png"
+let I7 = "https://cdn.grofers.com/66acfb51-c5fe-4718-a200-61efaf773556.png"
 
 export const SIDE_MENU_INFO = {
 

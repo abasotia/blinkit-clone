@@ -1,0 +1,6 @@
+export const appStore = "https://blinkit.com/d61019073b700ca49d22.png"
+export const googlePlay = "https://blinkit.com/8ed033800ea38f24c4f0.png"
+export const twitter =  "https://t1.gstatic.com/images?q=tbn:ANd9GcTDkOthawo9HeI5kI5Yoby9UOq2i9Ejpdzye2KJIYWX4YYXOl1e"
+export const instagram = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7G6EM4ZxGXSwkzcrmVG5-AQOd5CNvn-5jBWoISnqD67Hc9qE1"
+export const linkedin =  "https://t2.gstatic.com/images?q=tbn:ANd9GcRwwBF3sPmy1Lrs_CxkV4Uj4UkVH4wIt_dAzMEkMCRWWFCbJdYC"
+export const facebook = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTakSn10G1BgQK9fL0OPYIajBcbywPbi2gJsvXXhk_vDPFQfVn1"

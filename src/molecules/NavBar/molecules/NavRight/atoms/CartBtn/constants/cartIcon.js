@@ -1,0 +1,1 @@
+export const cartIcon = "https://github.com/abasotia/image/blob/main/cart.png?raw=true"

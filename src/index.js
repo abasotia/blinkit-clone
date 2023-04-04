@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.scss';
-import HomePage from './Pages/HomePage';
-import Checkout from './Pages/CheckoutPage';
-import Thankyou from './Pages/ThankyouPage';
 import App from './App.js'
 
 
