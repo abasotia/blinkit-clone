@@ -1,0 +1,68 @@
+$color_1: rgb(122,122,122);
+$color_2: black;
+$color_3: grey;
+$color_4: white;
+$color_5: rgb(12, 131, 31);
+$background-color_1: green;
+$background-color_2: rgb(169, 62, 62);
+
+.paymentSection {
+	margin: 50px auto 0px auto;
+	width: 60%;
+}
+.paymentDetails {
+	display: flex;
+	justify-content: space-between;
+	&:first-child {
+		color: $color_1;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.grand-total {
+		color: $color_2;
+		font-size: 15px;
+		font-weight: 700;
+	}
+	
+}
+.footerText {
+	font-size: 12px;
+	color: $color_3;
+	font-weight: 100;
+	margin: 100px;
+}
+#footerTextPage2 {
+	margin: 25px auto;
+}
+.totalBar {
+	display: flex;
+	justify-content: space-between;
+	background-color: $background-color_1;
+	color: $color_4;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 10px;
+	border-radius: 5px;
+}
+.slash {
+	color: $color_5;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: line-through;
+}
+.remove {
+	background-color: $background-color_2;
+	color: $color_4;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 0.5rem;
+	width: fit-content;
+	height: fit-content;
+	cursor: pointer;
+	margin-top: 0.3rem;
+}
+.proceedBar{
+	text-decoration: none;
+	color: white
+}
